@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #3785eb;
+}
+
+#resultado {
+  position: relative;
+  color: #000;
+  text-align: end;
+  background-color: #fff;
+  padding: 5px;
+  margin: 10px;
+  height: 7%;
+  width: 96%;
+  right: 1%;
+  font-size: 28px;
+  border: solid 1px #000;
+}
+
+#resultado {
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333333;
+}
+
+::-webkit-scrollbar-track {
+  background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ea5317;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+.calculadora {
+  position: absolute;
+  background-color: #f3e415;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.container {
+  border: solid 3px #3d4bca;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: #043370;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+#soma {
+  background-color: #ea5317;
+  height: 106px;
+  font-size: 2.8rem;
+}
+
+#soma:hover {
+  background-color: #ec6630;
+}
+
+#igual {
+  background-color: #0b6ff1;
+  width: 106px;
+  font-size: 2.8rem;
+}
+
+#igual:hover {
+  background-color: #3785eb;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    border: solid 3px #3d4bca;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 86%;
+    border-radius: 50%;
+    background-color: #043370;
+  }
+  button {
+    position: relative;
+    left: 0%;
+  }
+  #resultado {
+    right: 1.5%;
+    height: 40px;
+    width: 97%;
+  }
+
+  #soma {
+    height: 110px;
+  }
+  #igual {
+    width: 110px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    border: solid 3px #3d4bca;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 86%;
+    border-radius: 50%;
+    background-color: #043370;
+  }
+  button {
+    position: relative;
+    left: 0%;
+  }
+  #resultado {
+    right: 1.5%;
+    height: 40px;
+    width: 97%;
+  }
+
+  #soma {
+    height: 110px;
+  }
+  #igual {
+    width: 110px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    border: solid 3px #3d4bca;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #043370;
+  }
+
+  .calculadora {
+    height: 73%;
+    width: 46%;
+  }
+
+  #resultado {
+    width: 95%;
+    height: 40px;
+  }
+  button {
+    width: 48px;
+    height: 48px;
+  }
+
+  #igual {
+    width: 106px;
+  }
+
+  #soma {
+    height: 106px;
+  }
+}
+@media (min-width: 2100px) {
+  #resultado {
+    margin-bottom: 20px;
+  }
+
+  .calculadora {
+    height: 67%;
+    width: 50%;
+  }
+
+  button {
+    width: 90px;
+    height: 85px;
+  }
+
+  #igual {
+    width: 190px;
+  }
+
+  #soma {
+    height: 180px;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 876px) {
+  .calculadora {
+    height: 70%;
+    width: 46%;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+  }
+
+  #igual {
+    width: 100px;
+  }
+
+  #soma {
+    height: 100px;
+  }
+
+  .container {
+    width: 70%;
+    height: 80%;
+  }
+
+  #resultado {
+    width: 96%;
+    height: 40px;
+    right: 6px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .container {
+    width: 0px;
+    height: 0px;
+  }
+
+  #resultado {
+    right: 6px;
+    height: 40px;
+  }
+
+  #igual {
+    width: 110px;
+  }
+
+  #soma {
+    height: 110px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    border: solid 3px #3d4bca;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 75%;
+    border-radius: 50%;
+    background-color: #043370;
+  }
+
+  .calculadora {
+    width: 45%;
+    height: 71%;
+  }
+
+  button {
+    width: 70px;
+    height: 70px;
+    left: 0px;
+  }
+
+  #igual {
+    width: 150px;
+  }
+
+  #soma {
+    height: 150px;
+  }
+
+  #resultado {
+    width: 97%;
+    height: 40px;
+    left: -5px;
+  }
+}
